@@ -1,0 +1,16 @@
+<button type="button" class="btn btn-primary" (click)="addStudent();">Add Student</button>
+
+<ejs-grid #studentGrid [dataSource]='students' [allowGrouping]='true' [groupSettings]='groupOptions'
+    [allowRowDragAndDrop]='true' [selectionSettings]='selectOptions' [allowPaging]='true' [pageSettings]='pageSettings'
+    [editSettings]='editSettings' (commandClick)="onCommandClick($event)" (rowDrop)="onRowDrop($event)" (actionBegin)="onStudentGridActionBegin($event)" >
+    <e-columns>
+        <e-column field='StudentId' headerText='ID'></e-column>
+        <e-column field='FirstName' headerText='First Name'></e-column>
+        <e-column field='LastName' headerText='Last Name'> </e-column>
+        <e-column field='PhoneNumber' headerText='Phone Number'></e-column>
+        <e-column field='Status' headerText='Status'></e-column>
+        <e-column headerText='' width="120" minWidth=120 [commands]='commands'></e-column>
+    </e-columns>
+</ejs-grid>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,86 @@
+[
+    {
+        "FirstName": "Ravi",
+        "LastName": "Konaparthi",
+        "StudentId": 1,
+        "PhoneNumber": 3065503471,
+        "Status": "Active"
+    },
+    {
+        "FirstName": "Ravi 1",
+        "LastName": "Konaparthi 1",
+        "StudentId": 2,
+        "PhoneNumber": 3065503471,
+        "Status": "Active"
+    },
+    {
+        "FirstName": "Ravi 1",
+        "LastName": "Konaparthi 1",
+        "StudentId": 3,
+        "PhoneNumber": 3065503471,
+        "Status": "Dropped"
+    },
+    {
+        "FirstName": "Ravi 1",
+        "LastName": "Konaparthi 1",
+        "StudentId": 4,
+        "PhoneNumber": 3065503471,
+        "Status": "Dropped"
+    },
+    {
+        "FirstName": "Ravi 1",
+        "LastName": "Konaparthi 1",
+        "StudentId": 5,
+        "PhoneNumber": 3065503471,
+        "Status": "Dropped"
+    },
+    {
+        "FirstName": "Ravi 1",
+        "LastName": "Konaparthi 1",
+        "StudentId": 6,
+        "PhoneNumber": 3065503471,
+        "Status": "Delinquent"
+    },
+    {
+        "FirstName": "Ravi 1",
+        "LastName": "Konaparthi 1",
+        "StudentId": 7,
+        "PhoneNumber": 3065503471,
+        "Status": "Delinquent"
+    },
+    {
+        "FirstName": "Ravi 1",
+        "LastName": "Konaparthi 1",
+        "StudentId": 8,
+        "PhoneNumber": 3065503471,
+        "Status": "Active"
+    },
+    {
+        "FirstName": "Ravi 1",
+        "LastName": "Konaparthi 1",
+        "StudentId": 9,
+        "PhoneNumber": 3065503471,
+        "Status": "Delinquent"
+    },
+    {
+        "FirstName": "Ravi 1",
+        "LastName": "Konaparthi 1",
+        "StudentId": 10,
+        "PhoneNumber": 3065503471,
+        "Status": "Dropped"
+    },
+    {
+        "FirstName": "Ravi 1",
+        "LastName": "Konaparthi 1",
+        "StudentId": 11,
+        "PhoneNumber": 3065503471,
+        "Status": "Delinquent"
+    },
+    {
+        "FirstName": "Ravi 1",
+        "LastName": "Konaparthi 1",
+        "StudentId": 12,
+        "PhoneNumber": 3065503471,
+        "Status": "Delinquent"
+    }
+]

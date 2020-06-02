@@ -1,0 +1,14 @@
+[
+    {
+        "StatusId": 1,
+        "Status": "Active"
+    },
+    {
+        "StatusId": 2,
+        "Status": "Delinquent"
+    },
+    {
+        "StatusId": 3,
+        "Status": "Dropped"
+    }
+]

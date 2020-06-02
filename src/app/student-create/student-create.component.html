@@ -1,0 +1,33 @@
+<div class="modal-header">
+  <h4 class="modal-title">{{headerText}}</h4>
+  <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body" #studentModal>
+  <div class="form-horizontal">
+    <div class="row form-group">
+      <label class="control-label col-sm-4">First Name</label>
+      <div class="col-sm-8">
+        <input trim type="text" maxlength="50" class="e-input form-control" [ngClass]="!studentData.FirstName ? 'requiredClass' : ''" [(ngModel)]="studentData.FirstName" autocomplete="off">
+      </div>
+      <label class="control-label col-sm-4">Last Name</label>
+      <div class="col-sm-8">
+        <input trim type="text" maxlength="50" class="e-input form-control" [ngClass]="!studentData.LastName ? 'requiredClass' : ''" [(ngModel)]="studentData.LastName" autocomplete="off">
+      </div>
+      <label class="control-label col-sm-4">Phone Number</label>   
+      <div class="col-sm-8">
+        <input type="text" mask="(000) 000-0000" class="e-input form-control" [ngClass]="(!studentData.PhoneNumber || studentData.PhoneNumber.length < 10 || studentData.PhoneNumber.length > 10) ? 'requiredClass' : ''" [(ngModel)]="studentData.PhoneNumber" autocomplete="off">
+      </div>
+      <label class="control-label col-sm-4">Status</label>
+      <div class="col-sm-8">
+        <ejs-dropdownlist [dataSource]='status$ | async' [ngClass]="!studentData.Status ? 'requiredClass' : ''" [fields]="statusFields" [(value)]="studentData.Status" [allowFiltering]='true' placeholder='Select a Status'></ejs-dropdownlist>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal-footer">
+  <button type="button" *ngIf="!createMode" class="btn btn-primary" (click)="updateStudent()">Update</button>
+  <button type="button" *ngIf="createMode" class="btn btn-primary" (click)="saveStudent()">Save</button>
+  <button type="button" class="btn btn-outline-dark" (click)="activeModal.close()">Close</button>
+</div>
